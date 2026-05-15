@@ -12,8 +12,9 @@ const title = "Cranbalt — Tower Cranes & Steel Structures";
     * { margin:0; padding:0; box-sizing:border-box; }
     body { font-family: Arial, Helvetica, sans-serif; color: #333; line-height: 1.6; }
 
+    /* Navigation - Darker Blue-Green */
     nav {
-      background: #002b24;
+      background: #001f1a;
       color: white;
       position: fixed;
       width: 100%;
@@ -36,6 +37,7 @@ const title = "Cranbalt — Tower Cranes & Steel Structures";
       font-weight: bold;
     }
 
+    /* Hero */
     .hero {
       height: 100vh;
       min-height: 700px;
@@ -59,7 +61,7 @@ const title = "Cranbalt — Tower Cranes & Steel Structures";
       position: absolute;
       top: 0; left: 0;
       width: 100%; height: 100%;
-      background: rgba(0, 30, 25, 0.78);
+      background: rgba(0, 20, 18, 0.82); /* Stronger dark overlay */
       z-index: -1;
     }
 
@@ -68,7 +70,7 @@ const title = "Cranbalt — Tower Cranes & Steel Structures";
 
     .btn {
       background: #f9b03f;
-      color: #002b24;
+      color: #001f1a;
       padding: 16px 42px;
       text-decoration: none;
       border-radius: 6px;
@@ -76,6 +78,7 @@ const title = "Cranbalt — Tower Cranes & Steel Structures";
       display: inline-block;
     }
 
+    /* Services Cards */
     .services {
       display: flex;
       gap: 40px;
@@ -93,27 +96,28 @@ const title = "Cranbalt — Tower Cranes & Steel Structures";
       max-width: 520px;
       overflow: hidden;
     }
-    .card img {
-      width: 100%;
-      height: 220px;
-      object-fit: cover;
-    }
-    .card-content {
-      padding: 30px;
-    }
-    .card h3 { color: #002b24; margin-bottom: 15px; }
+    .card img { width: 100%; height: 220px; object-fit: cover; }
+    .card-content { padding: 30px; }
+    .card h3 { color: #001f1a; margin-bottom: 15px; }
 
-    footer {
+    /* Contact Section */
+    .contact-section {
       background: #002b24;
       color: white;
       text-align: center;
-      padding: 50px 20px 30px;
+      padding: 100px 20px;
+    }
+
+    footer {
+      background: #001f1a;
+      color: white;
+      text-align: center;
+      padding: 40px 20px;
     }
     .social a {
       color: white;
       font-size: 32px;
       margin: 0 20px;
-      text-decoration: none;
     }
   </style>
 </head>
@@ -146,9 +150,8 @@ const title = "Cranbalt — Tower Cranes & Steel Structures";
   </section>
 
   <div class="services" id="services">
-    <!-- Tower Crane Rent Card -->
     <div class="card">
-      <img src="https://cranbalt.com/wp-content/uploads/2025/xx/Tower-crane-rental-sweden-cranbalt-336x180.jpg" alt="Tower Crane Rent">
+      <img src="https://cranbalt.com/wp-content/uploads/2018/03/Tower-crane-rental-sweden-cranbalt-336x180.jpg" alt="Tower Crane Rent">
       <div class="card-content">
         <h3>Tower crane rent</h3>
         <p>Cranbalt offers a wide range of tower cranes (8t to 40t) in Baltic and Nordic countries. Tower cranes ranging between 4t to 32t. We are reliable partner providing customers professional solutions in the demanding construction sites.</p>
@@ -156,15 +159,20 @@ const title = "Cranbalt — Tower Cranes & Steel Structures";
       </div>
     </div>
 
-    <!-- Manufacturing Card -->
     <div class="card">
-      <img src="https://cranbalt.com/wp-content/uploads/2025/xx/industrial-crane-cranbalt-336x180.jpg" alt="Manufacturing">
+      <img src="https://cranbalt.com/wp-content/uploads/2018/02/industrial-crane-cranbalt-336x180.jpg" alt="Manufacturing">
       <div class="card-content">
         <h3>Manufacturing</h3>
         <p>We manufacture various models of industrial cranes, beams, cantilever racks, and other steel structures. High quality solutions are secured by the standards for quality assurance implemented in the company.</p>
         <a href="#" style="color:#f9b03f; font-weight:bold;">MORE →</a>
       </div>
     </div>
+  </div>
+
+  <!-- Contact Section -->
+  <div class="contact-section">
+    <h2 style="color:white; margin-bottom:30px;">Lets work together to achieve our goals</h2>
+    <a href="#" class="btn" style="background:#f9b03f; color:#001f1a;">CONTACT US</a>
   </div>
 
   <footer>
