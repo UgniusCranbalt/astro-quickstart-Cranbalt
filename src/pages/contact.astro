@@ -1,0 +1,109 @@
+---
+const title = "Contact Us | Cranbalt";
+---
+
+<html lang="lt">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>{title}</title>
+  <style>
+    body { font-family: Arial, Helvetica, sans-serif; margin: 0; padding: 0; color: #333; line-height: 1.6; }
+    .container { max-width: 1200px; margin: 0 auto; padding: 40px 20px; display: grid; grid-template-columns: 1fr 1fr; gap: 60px; }
+    @media (max-width: 900px) { .container { grid-template-columns: 1fr; } }
+
+    h1 { color: #001f1a; margin-bottom: 30px; }
+    h2 { color: #001f1a; margin: 30px 0 15px; }
+
+    .info p { margin: 8px 0; }
+    .label { font-weight: bold; color: #001f1a; }
+
+    form { display: grid; gap: 20px; }
+    input, textarea, select {
+      width: 100%;
+      padding: 12px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      font-size: 1rem;
+    }
+    .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+    @media (max-width: 700px) { .form-row { grid-template-columns: 1fr; } }
+
+    .btn {
+      background: #f9b03f;
+      color: #001f1a;
+      padding: 14px 32px;
+      border: none;
+      border-radius: 6px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+    .btn:hover { background: #f5a020; }
+  </style>
+</head>
+<body>
+
+  <div style="background:#001f1a; color:white; padding:1rem 5%; text-align:center;">
+    <h1>Contact Us</h1>
+  </div>
+
+  <div class="container">
+    <!-- Left Column - Info -->
+    <div>
+      <h2>Contacts</h2>
+      <div class="info">
+        <p><span class="label">Phone:</span> +370 414 53595</p>
+        <p><span class="label">Fax:</span> +370 414 53595</p>
+        <p><span class="label">E-mail:</span> <a href="mailto:info@cranbalt.com" style="color:#f9b03f;">info@cranbalt.com</a></p>
+        <p><span class="label">Address:</span> Dvaro str. 162A, LT-76197 Šiauliai, Lithuania</p>
+      </div>
+
+      <h2>Requisites</h2>
+      <div class="info">
+        <p><span class="label">Company name:</span> AB "Cranbalt"</p>
+        <p><span class="label">Company code:</span> 144657415</p>
+        <p><span class="label">VAT code:</span> LT446574113</p>
+        <p><span class="label">Bank:</span> Luminor Bank AS</p>
+        <p><span class="label">Bank account:</span> LT102140030002612162</p>
+      </div>
+    </div>
+
+    <!-- Right Column - Form + Map -->
+    <div>
+      <h2>Contact us</h2>
+      <form>
+        <div class="form-row">
+          <input type="text" placeholder="NAME AND SURNAME *" required />
+          <input type="email" placeholder="EMAIL *" required />
+        </div>
+        <input type="tel" placeholder="PHONE NUMBER" />
+        <select>
+          <option>General question</option>
+          <option>Tower Crane Rental</option>
+          <option>Manufacturing Inquiry</option>
+          <option>Other</option>
+        </select>
+        <textarea rows="6" placeholder="MESSAGE *" required></textarea>
+
+        <div style="display:flex; gap:15px; margin-top:10px;">
+          <button type="button" class="btn" style="background:transparent; border:2px solid #f9b03f; color:#f9b03f;">ATTACH A FILE</button>
+          <button type="submit" class="btn">SEND</button>
+        </div>
+      </form>
+
+      <!-- Map -->
+      <div style="margin-top:40px;">
+        <iframe 
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2294.5!2d23.123!3d55.933!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46e0d5d5d5d5d5d5%3A0x1234567890abcdef!2sDvaro%20g.%20162A%2C%20%C5%A0iauliai!5e0!3m2!1sen!2slt!4v1234567890" 
+          width="100%" 
+          height="350" 
+          style="border:0; border-radius:8px;" 
+          allowfullscreen="" 
+          loading="lazy">
+        </iframe>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
