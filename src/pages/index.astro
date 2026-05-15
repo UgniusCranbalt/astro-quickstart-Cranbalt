@@ -1,5 +1,5 @@
 ---
-const title = "Cranbalt — Tower Crane Rental & Manufacturing";
+const title = "Cranbalt - Tower Cranes & Steel Structures";
 ---
 
 <html lang="lt">
@@ -7,46 +7,85 @@ const title = "Cranbalt — Tower Crane Rental & Manufacturing";
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>{title}</title>
-  <meta name="description" content="Cranbalt - Tower crane rental, industrial cranes and steel structures manufacturing in Baltics and Nordic countries." />
+  <meta name="description" content="Cranbalt - Tower crane rental, manufacturing of industrial cranes and steel structures in Baltics & Nordic countries." />
   <style>
-    body { 
-      font-family: Arial, Helvetica, sans-serif; 
-      margin: 0; 
-      padding: 0; 
-      color: #333; 
-      line-height: 1.6;
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: Arial, Helvetica, sans-serif; line-height: 1.6; color: #333; }
+
+    /* Navigation */
+    nav {
+      background: rgba(0, 48, 135, 0.95);
+      color: white;
+      padding: 1rem 5%;
+      position: fixed;
+      width: 100%;
+      top: 0;
+      z-index: 1000;
     }
-    .hero { 
-      background: linear-gradient(rgba(0,48,135,0.75), rgba(0,48,135,0.75)), 
-                  url('https://cranbalt.com/wp-content/uploads/your-hero-video-or-image.jpg') center/cover no-repeat; 
-      color: white; 
-      text-align: center; 
-      padding: 160px 20px 120px; 
+    .nav-container {
+      max-width: 1200px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
     }
-    h1 { font-size: 3.2rem; margin: 0 0 20px; }
-    .container { max-width: 1100px; margin: 0 auto; padding: 60px 20px; }
-    h2 { color: #003087; margin-top: 50px; }
+    .logo { font-size: 1.8rem; font-weight: bold; }
+    .nav-links a {
+      color: white;
+      margin-left: 2rem;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    /* Hero */
+    .hero {
+      background: linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.65)), 
+                  url('https://cranbalt.com/wp-content/uploads/your-hero-image.jpg') center/cover no-repeat;
+      color: white;
+      text-align: center;
+      padding: 220px 20px 160px;
+      margin-top: 70px;
+    }
+    .hero h1 { font-size: 3.2rem; margin-bottom: 1rem; }
+    .hero p { font-size: 1.35rem; max-width: 800px; margin: 0 auto 2rem; }
+
+    .container { max-width: 1200px; margin: 0 auto; padding: 60px 20px; }
+    h2 { color: #003087; margin-bottom: 1.5rem; }
   </style>
 </head>
 <body>
 
+  <!-- Navigation -->
+  <nav>
+    <div class="nav-container">
+      <div class="logo">Cranbalt</div>
+      <div class="nav-links">
+        <a href="#">Tower Cranes</a>
+        <a href="#">Manufacturing</a>
+        <a href="#">Projects</a>
+        <a href="#">About Us</a>
+        <a href="#">Contact</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero -->
   <section class="hero">
     <h1>Half a century of lifting solutions</h1>
-    <p style="font-size: 1.35rem; max-width: 800px; margin: 0 auto 30px;">
-      The highest quality tower cranes rental, manufacturing of industrial cranes and steel constructions.
-    </p>
-    <a href="#services" style="background: #003087; color: white; padding: 16px 40px; text-decoration: none; border-radius: 6px; font-weight: bold; font-size: 1.1rem;">Find Out More</a>
+    <p>The highest quality tower cranes rental, manufacturing of industrial cranes and steel constructions.</p>
+    <a href="#services" style="background:#003087; color:white; padding:16px 40px; text-decoration:none; border-radius:6px; font-size:1.1rem;">Find Out More</a>
   </section>
 
+  <!-- Services -->
   <div class="container" id="services">
     <h2>Tower crane rent</h2>
-    <p>Cranbalt offers a wide range of tower cranes in Baltic and Nordic countries. Tower cranes ranging between <strong>8t to 40t</strong>.</p>
+    <p>Cranbalt offers a wide range of tower cranes (8t to 40t) in Baltic and Nordic countries.</p>
 
     <h2>Manufacturing</h2>
-    <p>We manufacture various models of industrial cranes, beams, cantilever racks, and other steel structures.</p>
+    <p>We manufacture bridge cranes, gantry cranes, steel structures, cantilever racks and other heavy equipment.</p>
 
     <h2>Who we are</h2>
-    <p>With roots in heavy equipment manufacturing that date back to 1966, Cranbalt combines long experience with modern technology to deliver the best lifting solutions in the region.</p>
+    <p>With roots dating back to 1966, Cranbalt combines long experience with modern technology to deliver the best lifting solutions in the region.</p>
   </div>
 
 </body>
