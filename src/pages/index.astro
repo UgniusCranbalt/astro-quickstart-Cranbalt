@@ -1,5 +1,5 @@
 ---
-const title = "Cranbalt - Tower Cranes & Steel Structures";
+const title = "Cranbalt — Tower Cranes & Steel Structures";
 ---
 
 <html lang="lt">
@@ -7,20 +7,20 @@ const title = "Cranbalt - Tower Cranes & Steel Structures";
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>{title}</title>
-  <meta name="description" content="Cranbalt - Tower crane rental, manufacturing of industrial cranes and steel structures in Baltics & Nordic countries." />
+  <meta name="description" content="Cranbalt - Tower crane rental, manufacturing of industrial cranes and steel structures." />
   <style>
-    * { margin: 0; padding: 0; box-sizing: border-box; }
-    body { font-family: Arial, Helvetica, sans-serif; line-height: 1.6; color: #333; }
+    * { margin:0; padding:0; box-sizing:border-box; }
+    body { font-family: Arial, Helvetica, sans-serif; color: #333; }
 
     /* Navigation */
     nav {
-      background: rgba(0, 48, 135, 0.95);
+      background: #003087;
       color: white;
-      padding: 1rem 5%;
       position: fixed;
       width: 100%;
       top: 0;
       z-index: 1000;
+      padding: 1rem 5%;
     }
     .nav-container {
       max-width: 1200px;
@@ -29,28 +29,60 @@ const title = "Cranbalt - Tower Cranes & Steel Structures";
       justify-content: space-between;
       align-items: center;
     }
-    .logo { font-size: 1.8rem; font-weight: bold; }
-    .nav-links a {
-      color: white;
-      margin-left: 2rem;
-      text-decoration: none;
-      font-weight: 500;
+    .logo img { height: 50px; }
+
+    /* Hamburger */
+    .hamburger {
+      display: none;
+      font-size: 28px;
+      cursor: pointer;
     }
 
-    /* Hero */
+    /* Hero with Video Background */
     .hero {
-      background: linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.65)), 
+      height: 100vh;
+      min-height: 700px;
+      background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), 
                   url('https://cranbalt.com/wp-content/uploads/your-hero-image.jpg') center/cover no-repeat;
       color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
       text-align: center;
-      padding: 220px 20px 160px;
+      position: relative;
       margin-top: 70px;
     }
-    .hero h1 { font-size: 3.2rem; margin-bottom: 1rem; }
-    .hero p { font-size: 1.35rem; max-width: 800px; margin: 0 auto 2rem; }
+    .hero video {
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      object-fit: cover;
+      z-index: -1;
+    }
 
-    .container { max-width: 1200px; margin: 0 auto; padding: 60px 20px; }
-    h2 { color: #003087; margin-bottom: 1.5rem; }
+    .hero-content h1 {
+      font-size: 3.2rem;
+      margin-bottom: 1rem;
+    }
+    .hero-content p {
+      font-size: 1.4rem;
+      max-width: 800px;
+      margin: 0 auto 2rem;
+    }
+
+    /* Footer */
+    footer {
+      background: #003087;
+      color: white;
+      text-align: center;
+      padding: 30px 20px;
+    }
+    .social a {
+      color: white;
+      font-size: 24px;
+      margin: 0 15px;
+      text-decoration: none;
+    }
   </style>
 </head>
 <body>
@@ -58,7 +90,11 @@ const title = "Cranbalt - Tower Cranes & Steel Structures";
   <!-- Navigation -->
   <nav>
     <div class="nav-container">
-      <div class="logo">Cranbalt</div>
+      <div class="logo">
+        <!-- Replace with your real logo URL -->
+        <img src="https://cranbalt.com/wp-content/uploads/2025/xx/cranbalt-logo.png" alt="Cranbalt Logo">
+      </div>
+      <div class="hamburger">☰</div>
       <div class="nav-links">
         <a href="#">Tower Cranes</a>
         <a href="#">Manufacturing</a>
@@ -71,22 +107,35 @@ const title = "Cranbalt - Tower Cranes & Steel Structures";
 
   <!-- Hero -->
   <section class="hero">
-    <h1>Half a century of lifting solutions</h1>
-    <p>The highest quality tower cranes rental, manufacturing of industrial cranes and steel constructions.</p>
-    <a href="#services" style="background:#003087; color:white; padding:16px 40px; text-decoration:none; border-radius:6px; font-size:1.1rem;">Find Out More</a>
+    <!-- Video Background (replace with your video URL) -->
+    <video autoplay muted loop playsinline>
+      <source src="https://cranbalt.com/wp-content/uploads/your-video.mp4" type="video/mp4">
+    </video>
+
+    <div class="hero-content">
+      <h1>Half a century of lifting solutions</h1>
+      <p>The highest quality tower cranes rental, manufacturing of industrial cranes and steel constructions.</p>
+      <a href="#services" style="background:#f9b03f; color:#003087; padding:16px 40px; text-decoration:none; border-radius:6px; font-weight:bold; display:inline-block;">Find Out More</a>
+    </div>
   </section>
 
-  <!-- Services -->
-  <div class="container" id="services">
+  <!-- Content Sections -->
+  <div class="container" style="max-width:1200px; margin:0 auto; padding:60px 20px;" id="services">
     <h2>Tower crane rent</h2>
     <p>Cranbalt offers a wide range of tower cranes (8t to 40t) in Baltic and Nordic countries.</p>
 
     <h2>Manufacturing</h2>
     <p>We manufacture bridge cranes, gantry cranes, steel structures, cantilever racks and other heavy equipment.</p>
-
-    <h2>Who we are</h2>
-    <p>With roots dating back to 1966, Cranbalt combines long experience with modern technology to deliver the best lifting solutions in the region.</p>
   </div>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2026 AB CRANBALT</p>
+    <div class="social" style="margin-top:15px;">
+      <a href="https://www.linkedin.com/company/plc-cranbalt-" target="_blank">in</a>
+      <a href="https://www.facebook.com/cranbalt/" target="_blank">f</a>
+    </div>
+  </footer>
 
 </body>
 </html>
