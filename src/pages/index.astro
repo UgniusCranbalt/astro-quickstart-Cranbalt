@@ -12,9 +12,9 @@ const title = "Cranbalt — Tower Cranes & Steel Structures";
     * { margin:0; padding:0; box-sizing:border-box; }
     body { font-family: Arial, Helvetica, sans-serif; color: #333; }
 
-    /* Navigation - Dark Green */
+    /* Navigation - Darker Blue-Green */
     nav {
-      background: #003d2b; /* Very dark green */
+      background: #002b24;   /* Darker, more blue-green */
       color: white;
       position: fixed;
       width: 100%;
@@ -35,10 +35,11 @@ const title = "Cranbalt — Tower Cranes & Steel Structures";
       color: white;
       margin-left: 2rem;
       text-decoration: none;
-      font-weight: 500;
+      font-weight: bold;        /* Made bold as requested */
+      font-size: 1.05rem;
     }
 
-    /* Hero with Video */
+    /* Hero with Real Video */
     .hero {
       height: 100vh;
       min-height: 700px;
@@ -57,6 +58,7 @@ const title = "Cranbalt — Tower Cranes & Steel Structures";
       object-fit: cover;
       z-index: -1;
     }
+
     .hero-content h1 {
       font-size: 3.2rem;
       margin-bottom: 1rem;
@@ -67,8 +69,8 @@ const title = "Cranbalt — Tower Cranes & Steel Structures";
       margin: 0 auto 2rem;
     }
     .btn {
-      background: #f9b03f; /* Brighter orange */
-      color: #003d2b;
+      background: #f9b03f;
+      color: #002b24;
       padding: 16px 40px;
       text-decoration: none;
       border-radius: 6px;
@@ -82,11 +84,11 @@ const title = "Cranbalt — Tower Cranes & Steel Structures";
       margin: 0 auto;
       padding: 80px 20px;
     }
-    h2 { color: #003d2b; margin-bottom: 1rem; }
+    h2 { color: #002b24; margin-bottom: 1rem; }
 
     /* Footer */
     footer {
-      background: #003d2b;
+      background: #002b24;
       color: white;
       text-align: center;
       padding: 40px 20px;
@@ -104,8 +106,7 @@ const title = "Cranbalt — Tower Cranes & Steel Structures";
   <nav>
     <div class="nav-container">
       <div class="logo">
-        <!-- ← Upload your logo and replace this URL -->
-        <img src="https://cranbalt.com/wp-content/uploads/2025/xx/cranbalt-logo-white.png" alt="Cranbalt Logo">
+        <img src="https://cranbalt.com/wp-content/uploads/2017/12/logo.svg" alt="Cranbalt Logo">
       </div>
       <div class="nav-links">
         <a href="#">Tower Cranes</a>
@@ -117,11 +118,10 @@ const title = "Cranbalt — Tower Cranes & Steel Structures";
     </div>
   </nav>
 
-  <!-- Hero Video -->
+  <!-- Hero with Real Video -->
   <section class="hero">
     <video autoplay muted loop playsinline>
-      <!-- Replace with your actual video URL -->
-      <source src="https://cranbalt.com/wp-content/uploads/your-hero-video.mp4" type="video/mp4">
+      <source src="https://cranbalt.com/wp-content/themes/cranbalt-theme/assets/img/video.mp4" type="video/mp4">
     </video>
 
     <div class="hero-content">
